@@ -1,0 +1,12 @@
+<div class="chatbox-wrapper">
+  <ol class="chatbox">
+    <li *ngFor="let message of messages">
+      <b *ngIf="!message.isAnnouncement">{{ message.sender }}: </b>
+      <p [class.announcement]="message.isAnnouncement">{{ message.content }}</p>
+    </li>
+  </ol>
+  <div class="chatbox-controls">
+    <textarea [(ngModel)]="draft"></textarea>
+    <button (click)="send()">Send</button>
+  </div>
+</div>

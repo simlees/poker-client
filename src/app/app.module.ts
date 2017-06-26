@@ -1,20 +1,36 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule }    from '@angular/http';
+import { FormsModule }   from '@angular/forms';
+
+import { AppRoutingModule } from './app-routing.module';
+
+import { WebSocketService } from './services/websocket.service';
+import { SessionService } from './services/session.service';
+import { ChatboxService } from './services/chatbox.service';
 
 import { AppComponent } from './app.component';
-import { ServerSocketService } from './server-socket.service';
+import { RoomComponent } from './components/room/room.component';
+import { TableComponent } from './components/table/table.component';
+import { ChatboxComponent } from './components/chatbox/chatbox.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RoomComponent,
+    TableComponent,
+    ChatboxComponent
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [
-    ServerSocketService
+    WebSocketService,
+    SessionService,
+    ChatboxService
   ],
   bootstrap: [AppComponent]
 })

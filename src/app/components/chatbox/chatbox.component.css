@@ -1,0 +1,47 @@
+.chatbox-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #5376a2;
+    height: 200px;
+    padding: 5px;
+}
+
+.chatbox {
+    height: 150px;
+    background-color: white;
+    overflow: scroll;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+.chatbox li {
+    padding: 5px;
+}
+
+.chatbox li p {
+    display: inline;
+}
+
+.chatbox li p.announcement {
+    font-style: italic;
+    color: #2196f3;
+}
+
+.chatbox-controls {
+    display: flex;
+    height: 45px;
+    margin-top: 5px;
+}
+
+.chatbox-controls textarea {
+    height: 40px;
+}
+
+.chatbox-controls button {
+    width: 72px;
+    margin-left: 5px;
+    height: 46px;
+}

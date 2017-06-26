@@ -19,9 +19,13 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "assets/css/normalize.css",
+        "assets/css/styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "assets/js/stomp.min.js",
+        "assets/js/sock.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
