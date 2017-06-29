@@ -4,7 +4,7 @@ import { WebSocketService } from './../../services/websocket.service';
 @Component({
   selector: 'app-room',
   templateUrl: './room.component.html',
-  styleUrls: ['./room.component.css']
+  styleUrls: ['./room.component.scss']
 })
 export class RoomComponent implements OnInit {
 
@@ -14,10 +14,6 @@ export class RoomComponent implements OnInit {
     this.connect();
   }
   
-  title = 'app';
-
-  message = "Pao";
-
   connect() {
     this.webSocketService.connect();
   }

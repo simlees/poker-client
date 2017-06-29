@@ -20,7 +20,7 @@
       "prefix": "app",
       "styles": [
         "assets/css/normalize.css",
-        "assets/css/styles.css"
+        "assets/css/main.scss"
       ],
       "scripts": [
         "assets/js/stomp.min.js",

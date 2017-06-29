@@ -6,7 +6,7 @@ import { ChatboxService } from './../../services/chatbox.service';
 @Component({
   selector: 'chatbox',
   templateUrl: './chatbox.component.html',
-  styleUrls: ['./chatbox.component.css']
+  styleUrls: ['./chatbox.component.scss']
 })
 export class ChatboxComponent implements OnInit {
 

@@ -14,34 +14,28 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-
-}
-
-.chatbox li {
-    padding: 5px;
-}
-
-.chatbox li p {
-    display: inline;
-}
-
-.chatbox li p.announcement {
-    font-style: italic;
-    color: #2196f3;
+    li {
+        padding: 5px;
+        p {
+            display: inline;
+        }
+        p.announcement {
+            font-style: italic;
+            color: #2196f3;
+        }
+    }
 }
 
 .chatbox-controls {
     display: flex;
     height: 45px;
     margin-top: 5px;
-}
-
-.chatbox-controls textarea {
-    height: 40px;
-}
-
-.chatbox-controls button {
-    width: 72px;
-    margin-left: 5px;
-    height: 46px;
+    textarea {
+        height: 40px;
+    }
+    button {
+        width: 72px;
+        margin-left: 5px;
+        height: 46px;
+    }
 }

@@ -1,0 +1,14 @@
+@import './../../../assets/css/_variables.scss';
+
+div.game-table-wrapper {
+    position: relative;
+    bottom: 120px;
+}
+
+div.game-table {
+    width: 1000px;
+    height: 500px;
+    border: 10px solid #332e2e;
+    border-radius: 250px;
+    background: $felt;
+}
