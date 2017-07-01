@@ -1,14 +1,27 @@
 @import './../../../assets/css/variables';
 
+:host {
+    width: 95%;
+}
+
 div.game-table-wrapper {
     position: relative;
     bottom: 120px;
+    padding-bottom: 50%;
 }
 
 div.game-table {
-    width: 1000px;
-    height: 500px;
+    transform: perspective( 600px ) rotateX(15deg);
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
     border: 10px solid #332e2e;
     border-radius: 250px;
     background: $felt;
+    bottom: 8%;
+    margin: 4% 11%;
+}
+
+div.game-table-overlay {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
 }
