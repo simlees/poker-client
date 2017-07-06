@@ -1,8 +1,9 @@
-<div class="player-card-wrapper">
-  <div *ngIf="player" class="player-card">
+<div class="player-badge-wrapper">
+  <div *ngIf="player" class="player-badge">
     <img [src]="player.imagePath" class="avatar" alt="avatar">
     <h4>{{ player.name }}</h4>
     <p *ngIf="!player.isReady()" class="status">{{ player.status }}</p>
     <p *ngIf="player.isReady()">{{ player.getStack() }}</p>
   </div>
 </div>
+<playing-card *ngFor="let card of cards" [card]="card"></playing-card>

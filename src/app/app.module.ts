@@ -13,7 +13,8 @@ import { AppComponent } from './app.component';
 import { RoomComponent } from './components/room/room.component';
 import { TableComponent } from './components/table/table.component';
 import { ChatboxComponent } from './components/chatbox/chatbox.component';
-import { PlayerCardComponent } from './components/player-card/player-card.component';
+import { PlayerBadgeComponent } from './components/player-badge/player-badge.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PlayerCardComponent } from './components/player-card/player-card.compon
     RoomComponent,
     TableComponent,
     ChatboxComponent,
-    PlayerCardComponent
+    PlayerBadgeComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
